@@ -80,7 +80,7 @@ let lastCar = 0;
 
 // Runs through the array until we hit on the last car in the array; reassigns that last car to the lastCar variable. 
 for (let i =0; i<inventory.length; i++) {
-    lastCar= inventory[i]; 
+    let lastCar= inventory[i]; 
 }
 
 // Logs the make and model of the last car 
@@ -95,7 +95,7 @@ console.log;
 
 for (let i=0; i<inventory.length; i++) {
     // Need to make sure I'm adding each model to the new array
-   addModel= inventory[i].car_model; 
+   let addModel= inventory[i].car_model; 
    carModels.push(addModel); 
 }
 
@@ -110,7 +110,7 @@ console.log();
 
 for (let i=0; i<inventory.length; i++) {
 
-   addCarYear= inventory[i].car_year; 
+   let addCarYear= inventory[i].car_year; 
    carYears.push(addCarYear); 
 }
 
