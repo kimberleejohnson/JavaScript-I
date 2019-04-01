@@ -75,7 +75,6 @@ console.log(`Car 33 is a ${inventory[32].car_year} ${inventory[32].car_make} ${i
 // The dealer needs the information on the last car in their inventory.  What is the make and model of the last car in the inventory?  Log the make and model into the console.
 
 // My solution usese a loop, but using .length-1 would've been another valid way to solve. 
-
 // Establishes a variable for the last car 
 let lastCar = 0;
 
@@ -89,9 +88,18 @@ console.log(`The last car in the inventory is a ${lastCar.car_make} ${lastCar.ca
 
 
 // ==== Challenge 3 ====
-// The marketing team wants the car models listed alphabetically on the website. Sort all the car model names into alphabetical order and log the results in the console
-let carModels = [];
-console.log(); 
+// The marketing team wants the car models listed alphabetically on the website. 
+// Sort all the car model names into alphabetical order and log the results in the console
+let carModels = []; 
+console.log; 
+
+for (let i=0; i<inventory.length; i++) {
+    // Need to make sure I'm adding each model to the new array
+   addModel= inventory[i].car_model; 
+   carModels.unshift(addModel); 
+}
+
+console.log(carModels.sort()); 
 
 
 // ==== Challenge 4 ====
