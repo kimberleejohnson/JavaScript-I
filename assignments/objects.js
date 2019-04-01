@@ -97,11 +97,17 @@ function speak(){
   return "Hello, my name is Kennan!"; 
 }
 
+// Adding the method to Kennan's key:value pairs. 
+kennan.speak = function speak(){
+  return "Hello, my name is Kennan!"; 
+}; 
 
+// Testing to see if logs change in kennan's object
+// console.log(kennan); 
 
+// Confirming the function output. 
+console.log(kennan.speak()); 
 
-
-// kennan.push(function)
 
 // Antonietta loves math, give her the ability to multiply two numbers together and return the product. Use the console.log provided as a hint.
 //console.log(antonietta.multiplyNums(3,4));
