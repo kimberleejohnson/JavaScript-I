@@ -65,11 +65,16 @@ let inventory = [{"id":1,"car_make":"Lincoln","car_model":"Navigator","car_year"
 // The dealer can't recall the information for a car with an id of 33 on his lot. Help the dealer find out which car has an id of 33 by logging the car's year, make, and model in the console log provided to you below:
 //Since I know the inventory array will count at 0, asking the console to log the 32nd item in the array will return id 33. 
 // There might've been a more sophisticated way to do this; I will be curious.
-console.log(inventory[32]);
-console.log(`Car 33 is a 2011 Wrangler Jeep.` );
+// Console logging the whole array 
+// console.log(inventory[32]);
+
+// Using keywords to add answer inline 
+console.log(`Car 33 is a ${inventory[32].car_year} ${inventory[32].car_make} ${inventory[32].car_model},`);
 
 // ==== Challenge 2 ====
 // The dealer needs the information on the last car in their inventory.  What is the make and model of the last car in the inventory?  Log the make and model into the console.
+
+// My solution usese a loop, but using .length-1 would've been another valid way to solve. 
 
 // Establishes a variable for the last car 
 let lastCar = 0;
@@ -80,13 +85,14 @@ for (let i =0; i<inventory.length; i++) {
 }
 
 // Logs the make and model of the last car 
-console.log(lastCar.car_make);
-console.log(lastCar.car_model); 
+console.log(`The last car in the inventory is a ${lastCar.car_make} ${lastCar.car_model}.`);
+
 
 // ==== Challenge 3 ====
 // The marketing team wants the car models listed alphabetically on the website. Sort all the car model names into alphabetical order and log the results in the console
 let carModels = [];
-console.log();
+console.log(); 
+
 
 // ==== Challenge 4 ====
 // The accounting team needs all the years from every car on the lot. Create a new array from the dealer data containing only the car years and log the result in the console.
