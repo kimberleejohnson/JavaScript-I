@@ -92,10 +92,10 @@ console.log(antonietta.gender);
 // console.log(kennan.speak());
 
 // Defining the method
-// Another stretch: making it so any student could introduce themselves. 
-function speak(){
-  return "Hello, my name is Kennan!"; 
-}
+// Another stretch idea: making it so any student could introduce themselves. 
+// function speak(){
+//   return "Hello, my name is Kennan!"; 
+// }
 
 // Adding the method to Kennan's key:value pairs. 
 kennan.speak = function speak(){
@@ -111,6 +111,21 @@ console.log(kennan.speak());
 
 // Antonietta loves math, give her the ability to multiply two numbers together and return the product. Use the console.log provided as a hint.
 //console.log(antonietta.multiplyNums(3,4));
+
+// Writing multiplyNums function 
+function multiplyNums(num1, num2) {
+  return num1 * num2; 
+}
+
+// Testing that function works 
+// console.log(multiplyNums(4,5)); 
+
+// Adding multiplyNums function to Antonietta's key value pairs
+antonietta.multiplyNums = function multiplyNums(num1, num2) {
+  return num1 * num2; 
+}
+
+console.log(antonietta.multiplyNums(3,4)); 
 
 // === Great work! === Head over to the the arrays.js file or take a look at the stretch challenge
 
